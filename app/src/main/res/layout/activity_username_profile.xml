@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsernameProfileActivity"
+    android:background="@drawable/backgnd">
+
+    <ImageView
+        android:id="@+id/imgprofile"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/editback"
+        android:ems="15"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColorHint="#B3FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/imgprofile"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/imgprofile"
+        app:layout_constraintTop_toBottomOf="@+id/imgprofile" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnprofileupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_back"
+        android:padding="10dp"
+        android:text="Update Profile"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/etusername"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/etusername"
+        app:layout_constraintTop_toBottomOf="@+id/etusername" />
+
+    <TextView
+        android:id="@+id/tvloggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="TextView"
+        android:fontFamily="sans-serif-black"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgprofile"
+        app:layout_constraintEnd_toEndOf="@+id/imgprofile"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imgprofile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/homee"
+        android:icon="@drawable/ic_homee"
+        android:title="Home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/settingg"
+        android:icon="@drawable/settingsicon"
+        android:title="Setting"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/batchedWrite"
+        android:icon="@drawable/loginicon"
+        android:title="Batched Write"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/transaction"
+        android:icon="@drawable/shareicon"
+        android:title="Transaction"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/msg"
+        android:icon="@drawable/ic_msg"
+        android:title="Messages"
+        app:showAsAction="always"/>
+
+</menu>

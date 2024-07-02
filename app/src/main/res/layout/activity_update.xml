@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity"
+    android:background="@drawable/layeredback"
+    >
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nameupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:minHeight="48dp"
+        android:padding="15dp"
+        android:textColor="#0095A8"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/editback"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/keyupdate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/editback"
+        android:ems="15"
+        android:textColor="#CCFFFFFF"
+        android:gravity="top"
+        android:hint="Key"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottombar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameupdate" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottombar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardElevation="20dp"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottombar">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/updatebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbarback"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+             />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

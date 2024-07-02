@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sign Up</string>
+    <string name="default_web_client_id">YOUR_CLIENT_ID.apps.googleusercontent.com</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="permissions">Permissions</string>
+</resources>

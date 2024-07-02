@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirestoreActivity"
+    android:background="@drawable/layeredback">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardd"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="5dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbarback"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_query"
+        tools:listitem="@layout/rv_item" />
+
+    <EditText
+        android:id="@+id/edit_query"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/editback"
+        android:fontFamily="sans-serif-black"
+        android:hint="Query"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="15dp"
+        android:textColor="#03A9F4"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/cardd"
+        app:layout_constraintTop_toBottomOf="@+id/cardd" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        android:background="@drawable/btngreen"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_query"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_query"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
